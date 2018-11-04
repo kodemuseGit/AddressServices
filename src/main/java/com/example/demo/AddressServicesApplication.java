@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableCircuitBreaker
+//@EnableCircuitBreaker
 @RefreshScope
 @ComponentScan(basePackages={"com.example.demo.config", "com.example.demo.services", "com.example.demo"})
 public class AddressServicesApplication {
