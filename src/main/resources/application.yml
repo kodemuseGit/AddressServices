@@ -9,7 +9,7 @@ spring:
     bootstrap-servers: 52.87.168.46:9092
 eureka:
   instance:
-    hostname: ip-172-31-89-106.ec2.internal
+    hostname: 172.31.89.106
     preferIpAddress: true
     statusPageUrl: http://${eureka.hostname}/info
     healthCheckUrl: http://${eureka.hostname}/health
