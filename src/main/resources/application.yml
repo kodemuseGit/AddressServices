@@ -1,0 +1,20 @@
+server:
+  port: 6161
+logging:
+  file: elk-example.log
+spring:
+  application:
+    name: address-service
+  kafka:
+    bootstrap-servers: 52.87.168.46:9092
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+    statusPageUrl: http://${eureka.hostname}/info
+    healthCheckUrl: http://${eureka.hostname}/health
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://35.173.231.217:5151/eureka/
