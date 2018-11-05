@@ -9,12 +9,12 @@ spring:
     bootstrap-servers: 52.87.168.46:9092
 eureka:
   instance:
-    hostname: 34.227.104.40
+    hostname: ip-172-31-89-106.ec2.internal
     preferIpAddress: true
-    statusPageUrl: http://${eureka.hostname}/infos
+    statusPageUrl: http://${eureka.hostname}/info
     healthCheckUrl: http://${eureka.hostname}/health
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://34.227.104.40:5151/eureka/
+      defaultZone: http://ip-172-31-89-106.ec2.internal:5151/eureka/
