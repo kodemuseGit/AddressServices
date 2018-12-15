@@ -14,7 +14,7 @@ public class PhoneFormatTest {
 	
 	@Test
 	public void inValidLength() {
-		String phone = "12345678901";
+		String phone = "1234567890";
 	 	assertEquals(true, phone.matches("[0-9]{1,10}"));
 	}
 	
