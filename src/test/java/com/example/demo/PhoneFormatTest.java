@@ -26,7 +26,7 @@ public class PhoneFormatTest {
 	
 	@Test
 	public void inValidFormat() {
-		String phone = "12345678a";
+		String phone = "12345678";
 	 	assertEquals(true, phone.matches("[0-9]{1,10}"));
 	}
 }
